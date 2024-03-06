@@ -3,7 +3,16 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compassionate Dentistry</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gothic A1"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/67ec8d9ce2.js"
       crossorigin="anonymous"
@@ -20,15 +29,14 @@
         />
       </a>
       <div id="navbar">
-        <!-- tbd figure out how best to do the header -->
         <button class="navbar_button">
           <a class="navbar_text" href="https://www.goodteeth.com/our-practice/">
-            <div><h3>Our Dentist</h3></div></a
+            <div><h4>Our Dentist</h4></div></a
           >
         </button>
         <button class="navbar_button">
           <a class="navbar_text" href="https://www.goodteeth.com/dental-care/">
-            <div><h3>Dental Care</h3></div></a
+            <div><h4>Dental Care</h4></div></a
           >
         </button>
         <button class="navbar_button">
@@ -36,7 +44,7 @@
             class="navbar_text"
             href="https://www.goodteeth.com/for-new-patients/"
           >
-            <div><h3>New Patients</h3></div></a
+            <div><h4>New Patients</h4></div></a
           >
         </button>
         <button class="navbar_button">
@@ -44,28 +52,30 @@
             class="navbar_text"
             href="https://www.goodteeth.com/specials-and-promotions/"
           >
-            <div><h3>Specials</h3></div></a
+            <div><h4>Specials</h4></div></a
           >
         </button>
         <button class="navbar_button">
           <a class="navbar_text" href="https://www.goodteeth.com/reviews/">
-            <div><h3>Reviews</h3></div></a
+            <div><h4>Reviews</h4></div></a
           >
         </button>
         <button class="navbar_button">
           <a class="navbar_text" href="https://www.goodteeth.com/contact-us/">
-            <div><h3>Contact Us</h3></div></a
+            <div><h4>Contact Us</h4></div></a
           >
         </button>
       </div>
     </div>
     <div id="header">
-      <img
-        id="smile_photo"
-        src="/assets/smiling stock.jpg"
-        alt="Gray background with woman smiling"
-      />
-      <h1 id="overlay-text">Keeping Your Smiles Bright and Beautiful</h1>
+      <div>
+        <img
+          id="smile_photo"
+          src="/assets/smiling stock.jpg"
+          alt="Gray background with woman smiling"
+        />
+      </div>
+      <div id="overlay-text">Keeping Your Smiles Bright and Beautiful</div>
     </div>
 
     <div id="main">
@@ -81,7 +91,7 @@
           <h2>Schedule an Appointment</h2>
           <button id="phone-button">
             <a id="phone-number" href="tel:+XXXXXXXXXX">(410) 531-6600</a>
-            <i class="fa-solid fa-phone-flip"></i>
+            <i class="fa-solid fa-phone-flip fa-xl"></i>
           </button>
         </div>
         <div id="right-side">
@@ -94,16 +104,19 @@
       </div>
       <div id="button-group">
         <button class="big-button">
-          Meet the Staff <i class="fa-regular fa-user"></i>
+          <div class="big-button-text">Meet the Staff</div>
+          <i class="fa-regular fa-user fa-xl"></i>
         </button>
         <button class="big-button">
-          Dental Care <i class="fa-regular fa-heart"></i>
+          <div class="big-button-text">Dental Care</div>
+          <i class="fa-regular fa-heart fa-xl"></i>
         </button>
         <button class="big-button">
-          New Patients <i class="fa-regular fa-clipboard"></i>
+          <div class="big-button-text">New Patients</div>
+          <i class="fa-regular fa-clipboard fa-xl"></i>
         </button>
       </div>
-      <h2>We're Here for You</h2>
+      <h2 id="subtitle">We're Here for You</h2>
       <div class="body">
         <p>
           We believe in treating our patients like the wonderful individuals
@@ -144,32 +157,38 @@
         />
         <img
           id="colgate_logo"
-          src="/assets/Colgate-logo.png"
+          src="/assets/Colgate-Emblem.png"
           alt="Red background with white text saying Colgate and a white line underneath that looks like a smile"
         />
       </div>
-      <!-- make contact bar a row/col -->
       <div id="contact_bar">
         <div class="contact_cols">
           <h3 class="info">Contact</h3>
-          <div>Phone: 123-456-7890</div>
-          <div class="info">
+          <p class="contact-text">Phone: 123-456-7890</p>
+          <p class="contact-text">
             Address: <br />
             1234 Street Suite # <br />
             City, State 12345
-          </div>
+          </p>
         </div>
         <div class="contact_cols">
           <h3 class="info">Hours</h3>
-          <div>
+          <p class="contact-text">
             Monday: 8:00 a.m. – 5:00 p.m. <br />
             Tuesday: 7:30 a.m. – 5:00 p.m. <br />
             Wednesday: 9:00 a.m. – 5:00 p.m. <br />
             Friday: 7:30 a.m. – 4:00 p.m. <br />
-          </div>
+          </p>
         </div>
         <div class="contact_cols">
           <h3 class="info">Our Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.055702332117!2d-76.98946102392799!3d39.2643027249718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c82794baef8fc3%3A0x97ea75a64ecff7e6!2sCompassionate%20Dentistry%20%2F%20Matthew%20Paper%2C%20DDS!5e0!3m2!1sen!2sus!4v1709699827513!5m2!1sen!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
           <!-- inset map here -->
         </div>
       </div>
