@@ -1,3 +1,5 @@
+/* CSS for HTML elements */
+
 h1 {
   color: black;
   font-family: "Lato";
@@ -284,12 +286,14 @@ iframe {
 
 /* media for different size screens */
 
+/* Added this to ensure that the navbar is centered when it wraps to the line underneath the logo */
 @media (max-width: 1399px) {
   #navbar {
     justify-content: center;
   }
 }
 
+/* This media tag was created to ensure that the overlay text does not go off of the image */
 @media (max-width: 1000px) {
   #overlay-text {
     position: absolute;
@@ -352,6 +356,10 @@ iframe {
   }
 }
 
+/* This additional media tag allows the section 
+with the short paragraph, appointment button, and 
+picture of dentists to become a column so that the 
+picture is not an awkward size */
 @media (max-width: 620px) {
   #side-by-side {
     flex-direction: column;
