@@ -9,6 +9,7 @@ h2 {
   font-family: "Lato";
   font-size: 36px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -93,7 +94,7 @@ p {
   width: 45%;
 }
 
-#header {
+#image-overlay {
   position: relative;
   text-align: center;
   color: black;
@@ -109,13 +110,6 @@ p {
 
 body {
   background-color: white;
-}
-
-#dentists_photo {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain;
 }
 
 #side-by-side {
@@ -136,10 +130,19 @@ body {
 #right-side {
   width: 40%;
   display: flex;
+  align-items: start;
+}
+
+#dentists_photo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 #subtitle {
   margin-left: 40px;
+  text-align: left;
 }
 
 .body-text {
@@ -158,6 +161,10 @@ body {
   font-size: 25px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+#phone-banner {
+  display: none;
 }
 
 #phone-button {
@@ -197,7 +204,7 @@ body {
   background-color: #508ab9;
   border: none;
   margin: 10px;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 80px;
   color: white;
   border-radius: 10px;
@@ -213,10 +220,16 @@ body {
 
 .big-button-text {
   margin-bottom: 40px;
+  color: white;
+  font-family: "Lato";
+  font-weight: 600;
 }
 
 .big-button:hover {
   background-color: rgba(109, 157, 197, 0.68);
+  .big-button-text {
+    color: black;
+  }
   color: black;
 }
 
@@ -266,6 +279,7 @@ body {
 iframe {
   width: 400px;
   height: 300px;
+  margin-bottom: 10px;
 }
 
 /* media for different size screens */
@@ -284,9 +298,6 @@ iframe {
 
 /* Media Query for Tablets */
 @media (max-width: 800px) {
-  body {
-    background-color: orange;
-  }
   #overlay-text {
     bottom: 30%;
     font-size: 35px;
@@ -325,17 +336,28 @@ iframe {
   .info {
     text-align: center;
   }
+  #phone-number {
+    font-size: 20px;
+  }
+  #right-side {
+    width: 70%;
+    margin-top: 15px;
+    align-items: start;
+  }
 }
 
 /* Media Query for Phones */
 @media (max-width: 500px) {
-  body {
-    background-color: blue;
-  }
   #overlay-text {
-    bottom: 20%;
-    font-size: 30px;
+    bottom: 25%;
+    font-size: 25px;
     font-weight: 800;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
   }
   iframe {
     width: 300px;
@@ -364,5 +386,39 @@ iframe {
   #side-by-side {
     flex-direction: column;
     align-items: center;
+  }
+  .body-text {
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  #left-side {
+    width: 80%;
+    margin-right: 0px;
+  }
+  #banner {
+    display: none;
+  }
+  #phone-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #small-logo {
+    width: 75%;
+    object-fit: contain;
+  }
+  .contact_cols {
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+  #right-side {
+    width: 85%;
+    margin-top: 15px;
+  }
+  .contact-text {
+    margin: 0px;
   }
 }

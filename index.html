@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <div id="banner">
+    <header role="banner" id="banner">
       <a href="/">
         <img
           src="/assets/compassionate_dentistry_logo.png"
@@ -28,7 +28,7 @@
           id="logo"
         />
       </a>
-      <div id="navbar">
+      <nav role="navigation" id="navbar">
         <button class="navbar_button">
           <a class="navbar_text" href="https://www.goodteeth.com/our-practice/">
             <div><h4>Our Dentist</h4></div></a
@@ -65,9 +65,19 @@
             <div><h4>Contact Us</h4></div></a
           >
         </button>
-      </div>
-    </div>
-    <div id="header">
+      </nav>
+    </header>
+
+    <header id="phone-banner">
+      <i class="fa-solid fa-bars fa-xl" style="color: #1b3c4d"></i>
+        <img
+          src="/assets/compassionate_dentistry_logo.png"
+          alt="Compassionate Dentistry Logo"
+          id="small-logo"
+        />
+      <i class="fa-solid fa-circle-question fa-xl" style="color: #1b3c4d"></i>
+    </header>
+    <div id="image-overlay">
       <div>
         <img
           id="smile_photo"
@@ -78,7 +88,7 @@
       <div id="overlay-text">Keeping Your Smiles Bright and Beautiful</div>
     </div>
 
-    <div id="main">
+    <main role="main" id="main">
       <h1 id="welcome">Welcome to the Practice of Matthew Paper DDS</h1>
       <div id="side-by-side">
         <div id="left-side">
@@ -104,15 +114,15 @@
       </div>
       <div id="button-group">
         <button class="big-button">
-          <div class="big-button-text">Meet the Staff</div>
+          <h3 class="big-button-text">Meet the Staff</h3>
           <i class="fa-regular fa-user fa-xl"></i>
         </button>
         <button class="big-button">
-          <div class="big-button-text">Dental Care</div>
+          <h3 class="big-button-text">Dental Care</h3>
           <i class="fa-regular fa-heart fa-xl"></i>
         </button>
         <button class="big-button">
-          <div class="big-button-text">New Patients</div>
+          <h3 class="big-button-text">New Patients</h3>
           <i class="fa-regular fa-clipboard fa-xl"></i>
         </button>
       </div>
@@ -161,37 +171,37 @@
           alt="Red background with white text saying Colgate and a white line underneath that looks like a smile"
         />
       </div>
-      <div id="contact_bar">
-        <div class="contact_cols">
-          <h3 class="info">Contact</h3>
-          <p class="contact-text">Phone: 123-456-7890</p>
-          <p class="contact-text">
-            Address: <br />
-            1234 Street Suite # <br />
-            City, State 12345
-          </p>
-        </div>
-        <div class="contact_cols">
-          <h3 class="info">Hours</h3>
-          <p class="contact-text">
-            Monday: 8:00 a.m. – 5:00 p.m. <br />
-            Tuesday: 7:30 a.m. – 5:00 p.m. <br />
-            Wednesday: 9:00 a.m. – 5:00 p.m. <br />
-            Friday: 7:30 a.m. – 4:00 p.m. <br />
-          </p>
-        </div>
-        <div class="contact_cols">
-          <h3 class="info">Our Location</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.055702332117!2d-76.98946102392799!3d39.2643027249718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c82794baef8fc3%3A0x97ea75a64ecff7e6!2sCompassionate%20Dentistry%20%2F%20Matthew%20Paper%2C%20DDS!5e0!3m2!1sen!2sus!4v1709699827513!5m2!1sen!2sus"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <!-- inset map here -->
-        </div>
+    </main>
+
+    <footer id="contact_bar">
+      <div class="contact_cols">
+        <h3 class="info">Contact</h3>
+        <p class="contact-text">Phone: 123-456-7890</p>
+        <p class="contact-text">
+          Address: <br />
+          1234 Street Suite # <br />
+          City, State 12345
+        </p>
       </div>
-    </div>
+      <div class="contact_cols">
+        <h3 class="info">Hours</h3>
+        <p class="contact-text">
+          Monday: 8:00 a.m. – 5:00 p.m. <br />
+          Tuesday: 7:30 a.m. – 5:00 p.m. <br />
+          Wednesday: 9:00 a.m. – 5:00 p.m. <br />
+          Friday: 7:30 a.m. – 4:00 p.m. <br />
+        </p>
+      </div>
+      <div class="contact_cols">
+        <h3 class="info">Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.055702332117!2d-76.98946102392799!3d39.2643027249718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c82794baef8fc3%3A0x97ea75a64ecff7e6!2sCompassionate%20Dentistry%20%2F%20Matthew%20Paper%2C%20DDS!5e0!3m2!1sen!2sus!4v1709699827513!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
   </body>
 </html>
