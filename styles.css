@@ -137,7 +137,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #subtitle {
@@ -284,6 +284,12 @@ iframe {
 
 /* media for different size screens */
 
+@media (max-width: 1399px) {
+  #navbar {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1000px) {
   #overlay-text {
     position: absolute;
@@ -343,6 +349,17 @@ iframe {
     width: 70%;
     margin-top: 15px;
     align-items: start;
+  }
+}
+
+@media (max-width: 620px) {
+  #side-by-side {
+    flex-direction: column;
+    align-items: center;
+  }
+  #left-side {
+    width: 90%;
+    margin-right: 0px;
   }
 }
 
