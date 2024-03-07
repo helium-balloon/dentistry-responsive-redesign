@@ -366,7 +366,7 @@ iframe {
 /* Media Query for Phones */
 @media (max-width: 500px) {
   #overlay-text {
-    bottom: 25%;
+    bottom: 20%;
     font-size: 25px;
     font-weight: 800;
   }
