@@ -421,6 +421,7 @@ iframe {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #e5ebf7;
   }
   #small-logo {
     width: 75%;
